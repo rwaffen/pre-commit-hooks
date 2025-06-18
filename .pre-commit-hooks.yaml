@@ -3,4 +3,5 @@
   description: Static analysis tool for Ruby code
   language: docker_image
   entry: ghcr.io/voxpupuli/voxbox:latest -f /Rakefile rubocop
-  types: [shell]
+  types:
+    - ruby
