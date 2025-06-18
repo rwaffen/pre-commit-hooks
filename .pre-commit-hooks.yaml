@@ -2,6 +2,8 @@
   name: VoxBox RuboCop
   description: Static analysis tool for Ruby code
   language: docker_image
-  entry: ghcr.io/voxpupuli/voxbox:latest -f /Rakefile rubocop
+  entry: ghcr.io/voxpupuli/voxbox:latest
+  args:
+    - -f /Rakefile rubocop
   types:
     - ruby
